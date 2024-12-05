@@ -21,8 +21,9 @@ public class User {
     private String password;
     @ManyToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE,
     CascadeType.DETACH, CascadeType.REFRESH})
+    @JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "role_id"))
     private List<Role>roles;
-
     public User() {}
     public User(String name, String email, String password) {
         this.name = name; this.email = email; this.password = password;

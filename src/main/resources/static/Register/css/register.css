@@ -8,7 +8,7 @@
     width: 100vw;
     height: 100vh;
     background-size: 100%;
-    background-image: url(/static/Login/img/background.jpg);
+    background-image: url(/static/Register/img/bg_signin-login.jpg);
     background-repeat: no-repeat;
 
     position: relative;
@@ -47,8 +47,8 @@ form{
     cursor: pointer;
 }
 i{
-    width: 92.5px;
-    height: 91.5px;
+    width: 92px;
+    height: 91px;
     box-sizing: border-box;
     outline-style: none;
     box-sizing: border-box;
@@ -80,7 +80,7 @@ label{
     margin-top: 22px;
     margin-left: 5px;
 }
-.input_infor input{
+input{
     width: 100%;
     outline-style: none;
     /* background-color: black; */
@@ -96,7 +96,7 @@ label{
     border-left: 5px solid #c33400;
 }
 
-.input_infor input:focus{
+input:focus{
    border-left: 5px solid #02c1c1;
 }
 

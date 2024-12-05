@@ -3,37 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">-->
-     <link rel="stylesheet" href="/Home/css/style.css">
-<!--    <link rel="stylesheet" href="{{ url_for('static', filename='Home/css/style.css') }}">-->
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="/static/Home/css/style.css">
+    <script src="./jquery.js"></script>
 </head>
 <body>
+
+    <section class="up_top">
+        <a href="#">
+            <i class="fa-solid fa-angle-up"></i>
+        </a>
+    </section>
+
+    <section class="hotline">
+        <div class="img"></div>
+        <div class="content">
+            <p>Hotline 0123456789</p>
+        </div>
+    </section>
     <header>
         <nav class="navbar">
-            <div class="left">
-                <div class="logo">
-                    <a href=""><img src="./images_index/kisspng-registered-nurse-nursing-nurse-practitioner-logo-c-golden-medical-symbol-5ae8e7df518105.2760308015252131513339.png" alt="">
-                    </a>
+            <div class="container_navbar">
+                <div class="left">
+                    <div class="logo">
+                        <a href=""><img src="/static/Home/img/kisspng-registered-nurse-nursing-nurse-practitioner-logo-c-golden-medical-symbol-5ae8e7df518105.2760308015252131513339.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li><a href="">Bệnh Nhân</a></li>
+                            <li><a href="">Bác Sĩ</a></li>
+                            <li><a href="">Chuyên Khoa</a></li>
+                            <li><a href="">Thuốc</a></li>
+                            <li><a href="">Liên Hệ</a></li>
+                            <li><a>Download <i class="fa-solid fa-caret-down"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="item">
-                    <ul>
-                        <li><a href="">Bệnh Nhân</a></li>
-                        <li><a href="">Bác Sĩ</a></li>
-                        <li><a href="">Chuyên Khoa</a></li>
-                        <li><a href="">Thuốc</a></li>
-                        <li><a href="">Liên Hệ</a></li>
-                        <li><a>Download <i class="fa-solid fa-caret-down"></i></a></li>
-                    </ul>
+    
+                <div class="right">
+                    <a href="./login.html"><button class="btn-1">Đăng Nhập</button></a>
+                    <a href="./register.html"><button class="btn-2" >Đăng Ký</button></a>
                 </div>
-            </div>
-
-            <div class="right">
-                <a href="./login.html"><button class="btn-1">Đăng Nhập</button></a>
-                <a href="./register.html"><button class="btn-2" >Đăng Ký</button></a>
             </div>
         </nav>
+
+        <div class="slide">
+            <div class="images">
+                <marquee class="slide_text" behavior="" direction=""></marquee>
+                <div class="bg">"Thấu hiểu tâm hồn,  chữa lành nỗi đau"</div>
+
+            </div>
+        </div>
     </header>
+
+    <main>
+        <section class="quality-service">
+            <div class="container">
+                <div class="list-item">
+                    <div class="item item-1">
+                        <img src="/static/Home/img/BS.png" alt="">
+                        <div class="content">
+                            <h4>Bác Sĩ Kinh Nghiệm</h4>
+                            <p>Đội ngũ bác sĩ giỏi, chuyên môn vững chắc, giàu kinh nghiệm..</p>
+                        </div>
+                    </div>
+
+                    <div class="item item-2">
+                        <img src="/static/Home/img/Kythuatcao.png" alt="">
+                        <div class="content">
+                            <h4>Dịch Vụ Kỹ Thuật Cao</h4>
+                            <p>Phẫu thuật nội soi tiêu hóa, gan mật, tiết niệu, dây chằng, khới gối</p>
+                        </div>
+                    </div>
+
+                    <div class="item item-3">
+                        <img src="/static//Home/img/TTB.png" alt="">
+                        <div class="content">
+                            <h4>Thiết Bị Hiện Đại</h4>
+                            <p>Hệ thống trang thiết bị y tế hiện đại được nhập khẩu từ nước ngoài..</p>
+                        </div>
+                    </div>
+
+                    <div class="item item-4">
+                        <img src="/static/Home/img/TienIch.png" alt="">
+                        <div class="content">
+                            <h4>Nhiều Tiện Ích</h4>
+                            <p>Chi phí khám và điều trị, chi phí rõ ràng cùng nhiều ưu đãi..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about_our">
+            <div class="container">
+                <div class="left">
+                    <img src="/static/Home/img/team_doctor.jpg" alt="">
+                    <!-- <video src="./images_index/49813-458438871_medium.mp4" autoplay loop></video> -->
+                    <div class="play_video">
+                        <i class="fa-solid fa-expand"></i>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <h6>WELCOME TO HOSPITAL</h6>
+                    <h1>Về chúng tôi</h1>
+                    <p>Chúng tôi tự hào là một trong những bệnh viện hàng đầu, cam kết mang đến dịch vụ y tế chất lượng cao và tận tâm vì sức khỏe cộng đồng. Với đội ngũ y bác sĩ giàu kinh nghiệm, cơ sở vật chất hiện đại và phương pháp điều trị tiên tiến, chúng tôi luôn nỗ lực để trở thành nơi đáng tin cậy cho mọi người khi cần chăm sóc sức khỏe.</p>
+                    <p>Chúng tôi không chỉ là một bệnh viện mà còn là người bạn đồng hành đáng tin cậy trong hành trình chăm sóc sức khỏe của bạn và gia đình. Hãy để chúng tôi giúp bạn tận hưởng một cuộc sống khỏe mạnh và hạnh phúc hơn.</p>
+                    <button>Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="doctors-team">
+            <div class="container">
+                <h6>OUR TEAM</h6>
+                <h1>Đội ngũ bác sĩ chúng tôi</h1>
+                <div class="list-item">
+                    <div class="item item-1">
+                        <div class="avatar">
+                            <img style="object-position: -95px 0" src="/static/Home/img/Bs2.jpg" alt="">
+                        </div>
+                        <div class="infor">
+                            <h3>Bác sĩ</h3>
+                            <p>Hơn 15 năm kinh nghiệm</p>
+                        </div>
+                        <div class="connect">
+                            <a href="#" class="same facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="same twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="#" class="same instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="same in">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="item item-2">
+                        <div class="avatar">
+                            <img style="object-position: 0 0" src="/static/Home/img/Bs4.jpg" alt=""> 
+                        </div>
+                        <div class="infor">
+                            <h3>Bác sĩ</h3>
+                            <p>Hơn 15 năm kinh nghiệm</p>
+                        </div>
+                        <div class="connect">
+                            <a href="#" class="same facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="same twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="#" class="same instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="same in">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="item item-3">
+                        <div class="avatar">
+                            <img style="object-position: 0 -70px;" src="/static/Home/img/Bs3.jpg" alt="">
+                        </div>
+                        <div class="infor">
+                            <h3>Bác sĩ</h3>
+                            <p>72 Phép Thần Thông </p>
+                        </div>
+                        <div class="connect">
+                            <a href="#" class="same facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="same twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="#" class="same instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="same in">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="item item-4">
+                        <div class="avatar">
+                            <img style="object-position: 0 -20px" src="/static/Home/img/Bs1.jpg" alt="">
+                        </div>
+                        <div class="infor">
+                            <h3>Bác sĩ</h3>
+                            <p>Hơn 15 năm kinh nghiệm</p>
+                        </div>
+                        <div class="connect">
+                            <a href="#" class="same facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="same twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="#" class="same instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="same in">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="container">
@@ -77,10 +264,32 @@
 
             </div>
 
+            <div class="center">
+                <div class="list-item">
+                    <a href="#" class="item">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="item">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#" class="item">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="item">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="item">
+                        <i class="fa-solid fa-headset"></i>
+                    </a>
+                </div>
+            </div>
+
             <div class="bottom">
                 <h1>Bệnh viện tâm thần đà nẵng</h1>
             </div>
         </div>
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>
