@@ -1,9 +1,25 @@
 package com.qlbv.DoAnNhom_CS._W.SpringBackend.entity;
 
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "contact")
+
 public class Contact {
+    @javax.persistence.Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private int id;
+    @Column (name = "name")
     private String name;
+    @Column(name = "message")
     private String message;
+    @Column(name = "email")
     private String email;
 
     public Contact() {

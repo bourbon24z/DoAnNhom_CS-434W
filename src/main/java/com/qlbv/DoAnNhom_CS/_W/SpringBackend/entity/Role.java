@@ -1,6 +1,6 @@
 package com.qlbv.DoAnNhom_CS._W.SpringBackend.entity;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 
 import java.util.ArrayList;
