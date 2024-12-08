@@ -31,6 +31,10 @@ public class Doctor {
             cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.REFRESH, CascadeType.DETACH})
     private List<Patient> patients;
 
+    public Doctor(List<Patient> patients) {
+        this.patients = patients;
+    }
+
     public Doctor() {
 
     }
@@ -106,5 +110,16 @@ public class Doctor {
         }
         patients.add(patient);
         patient.setDoctor(this);
+    }
+    @Override
+    public String toString()
+    {
+        return "Doctor{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", gender='" + gender + '\'' +
+                ", CCCD='" + cccd+ '\'' +
+                ", email='" + email + '\'' +
+                '}';
     }
 }
