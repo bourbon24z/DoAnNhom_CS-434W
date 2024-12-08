@@ -1,7 +1,7 @@
 package com.qlbv.DoAnNhom_CS._W.SpringBackend.entity;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

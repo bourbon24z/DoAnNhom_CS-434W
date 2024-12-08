@@ -1,32 +1,33 @@
 package com.qlbv.DoAnNhom_CS._W.SpringBackend.entity;
 
 import javax.persistence.*;
-
-
 import java.util.ArrayList;
 import java.util.List;
+
 @Entity
-@Table(name = "Role")
+@Table(name = "role")
 public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private int id;
+
     @Column(name = "name")
     private String name;
-    @ManyToMany(fetch = FetchType.LAZY, cascade = {CascadeType.DETACH, CascadeType.MERGE,
-            CascadeType.PERSIST, CascadeType.REFRESH})
+
+    @ManyToMany(fetch = FetchType.LAZY, cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
+    @JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "role_id"), inverseJoinColumns = @JoinColumn(name = "user_id"))
     private List<User> userList;
 
-    public Role() {
-    }
+    public Role() {}
 
     public Role(String name) {
         this.name = name;
     }
+
     public void addUser(User user) {
         if (this.userList == null) {
-            this.userList = new ArrayList<User>();
+            this.userList = new ArrayList<>();
         }
         userList.add(user);
     }
