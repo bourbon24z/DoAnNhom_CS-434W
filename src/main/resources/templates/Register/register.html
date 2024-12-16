@@ -6,38 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="/static/Register/css/register.css">
+    <link rel="stylesheet" href="/Register/css/register.css">
 </head>
 
 <body>
     <div class="container">
         <div class="background"></div>
-        <form action="">
+        <form action = "#" th:action="@{/Home/register-user}" th:object="${user}" method="POST">
             <div class="avatar">
                 <div class="bg"></div>
                 <i class='bx bxs-user-circle' ></i>
-                
             </div>
             <h2>
                 Register
             </h2>
     
             <div class="input_infor">
-                <label for="">Username</label>
-                <input type="text" name="" id="" placeholder="Enter Username">
-                <label for="">Password</label>
-                <input type="password" name="" id="" placeholder="Enter Password">
-                <label for="">Repeat Password</label>
-                <input type="password" name="" id="" placeholder="Repeat Password">
+                <label for="user_name">Username</label>
+                <input type="text" name="" id="user_name" th:field="*{name}" placeholder="Enter Username">
+                <label for="password">Password</label>
+                <input type="password" name="" id="password" th:field="*{password}"  placeholder="Enter Password">
+                <label for="repeat-password">Repeat Password</label>
+                <input type="password" name="" id="repeat-password" placeholder="Repeat Password">
             </div>
     
             <div class="buton_login">
-                <button>Register</button>
+                <button type="submit">Register</button>
             </div>
     
             <div class="get_password">
                 <!-- <a href="">Lost your password?</a> -->
-                <a href="./login.html">
+                <a th:href="@{/login}">Login Here!</a>
                     Login Here!</a>
             </div>
         </form>
